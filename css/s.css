@@ -1,0 +1,120 @@
+*{
+    margin: 0 auto;
+    padding:0 ;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav__rasm{
+    display: flex;
+    font-family: "Montserrat";
+font-size: 32px;
+font-weight: 700;
+line-height: 23px;
+}
+.svg{
+    padding: 0 25px;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__link{
+    font-family: "Montserrat";
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+padding: 0 25px;
+}
+.nav__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.nav{
+    border-bottom: 1px solid #323232;
+    max-width: 1320px;
+     
+    
+
+}
+.menu{
+    width: 30px;
+}
+.close{
+    width: 30px;
+    color: #000;
+}
+label{
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.intro__box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.intro__card:nth-of-type(2){
+    grid-row: span 2;
+}
+.intro__card img{
+    display: block;
+}
+.intro__card{
+    background-color: #e1e1e1;
+    width: 100%;
+    min-height: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #dadada;
+    position: relative;
+}
+.intro__card::before,
+.catalog__card:nth-child(7)::before{
+    content: '50%';
+    background: #323232;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.intro__card:nth-child(3)::before,
+.catalog__card:nth-child(8)::before{
+    content: '20%';
+}
+.card__information{
+    text-align: center;
+}
+.type, .price{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #323232;
+}
+.brand{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
